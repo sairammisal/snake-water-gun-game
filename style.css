@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('swg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden; /* 💥 This disables scrolling */
+  }
+  
+  
+  /* .game-container {
+    max-width: 500px;
+    margin: 60px auto; 
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+    background-color: yellow;
+  } */
+
+  .game-container {
+    max-width: 500px;
+    margin: auto; /* ✅ removes vertical spacing that caused overflow */
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+    background-color: yellow;
+    position: absolute; /* ✅ Centers vertically */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  h1 {
+    margin-bottom: 25px;
+    font-size: 2rem;
+    color:black;
+  }
+  
+  .scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .choices {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+  
+  .choice {
+    font-size: 1.5rem;
+    padding: 15px 20px;
+    background-color: #ffffff33;
+    color: black;
+    font-weight: bold;
+    border: 2px dotted black;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  
+  .choice:hover {
+    background-color: #ffffff55;
+    transform: scale(1.05);
+  }
+  
+  .result p {
+    font-size: 1.2rem;
+    margin: 8px 0;
+  }
+
+
+  
+  
